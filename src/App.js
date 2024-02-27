@@ -2,6 +2,7 @@ import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/Home";
 import NavbarIndex from "./components/common/NavbarIndex";
+import OnlineOrder from "./pages/OnlineOrder";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                 <Route path="/">
                     <Route index element={<Home/>}/>
                 </Route>
+                <Route path={"/online-order"} element={<OnlineOrder/>}/>
             </Routes>
         </BrowserRouter>
         // <div className="App">

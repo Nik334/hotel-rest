@@ -1,14 +1,51 @@
 [
   {
-    "name" : "Chicken",
+    "name": "OXTAIL (QUEUE BOEUF)",
+    "pricing": [
+      {
+        "key": 1,
+        "label": "L $22.00",
+        "types": {
+          "name": "TYPE OF RICE FOR OXTAIL",
+          "items": [
+            {
+              "label": "DIRI BLAN (WHITE RICE)",
+              "type": "RADIO"
+            },
+            {
+              "label": "DIRI KOLE (RICE AND BEANS)",
+              "type": "RADIO"
+            },
+            {
+              "label": "DIRI DJOU DJO (BLACK RICE)",
+              "type": "RADIO"
+            },
+            {
+              "label": "MAYI MOULEN PLAIN (CORNMEAL PLAIN)",
+              "type": "RADIO"
+            },
+            {
+              "label": "MAYI MOULEN W/ RED BEANS (CORNMEAL W/RED BEANS)",
+              "type": "RADIO"
+            }
+          ]
+        }
+      },
+      {
+        "key": 2,
+        "label": "M $20.00"
+      }
+    ],
     "price": 3000
   },
   {
-    "name" : "Chowin",
+    "name": "Chowing",
+    "pricing": [],
     "price": 3000
   },
   {
-    "name" : "Roti",
+    "name": "Roti",
+    "pricing": [],
     "price": 3000
   }
 ]
