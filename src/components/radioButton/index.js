@@ -1,15 +1,17 @@
 import React from "react";
 
-const RadioButtonIndex = ({itemName, item, onRadioButtonChange}) => {
+const RadioButtonIndex = ({itemName, item, selectedItem, onRadioButtonChange}) => {
     return (
-        <div className="n-summary" key={item.key}>
+        <div className="col-4" key={item.key}>
             <label>
-                <input type="radio"
-                       name={itemName}
-                       value={item.label}
-                       onChange={onRadioButtonChange}
+                <input
+                    type="radio"
+                    name={itemName}
+                    value={item?.label}
+                    checked={selectedItem === item?.label}
+                    onChange={onRadioButtonChange}
                 />
-                <span className="checkmark">{item.label}</span>
+                <span className="checkmark"> {item.label}</span>
             </label>
         </div>
     )

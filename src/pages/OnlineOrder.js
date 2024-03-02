@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
 import api from '../services/api.json'
-import RadioButton from "../components/radioButton";
 import ItemListing from "../components/ItemListing";
 
 const OnlineOrder = () => {
@@ -14,7 +13,7 @@ const OnlineOrder = () => {
 
     return (
         <div className={"container"}>
-            {JSON.stringify(menu)}
+            {/*{JSON.stringify(menu)}*/}
             <br/>
             <br/>
             <br/>
@@ -22,7 +21,6 @@ const OnlineOrder = () => {
             <h3>Main Dishes</h3>
             {
                 menu.map((item, index) => <>
-                    <div>{item.name}</div>
                     <ItemListing
                         itemName={item.name}
                         itemList={item?.pricing}

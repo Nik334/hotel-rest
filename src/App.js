@@ -3,15 +3,18 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/Home";
 import NavbarIndex from "./components/common/NavbarIndex";
 import OnlineOrder from "./pages/OnlineOrder";
+import CarouselIndex from "./components/common/CarouselIndex";
 
 function App() {
+
+    const { pathname } = window.location;
+    console.log("pathname: ", pathname)
+
     return (
         <BrowserRouter>
+            <NavbarIndex component={pathname === "/" && <CarouselIndex/>}/>
             <Routes>
-                <Route path={"/navbar"} element={<NavbarIndex/>}/>
-                <Route path="/">
-                    <Route index element={<Home/>}/>
-                </Route>
+                <Route path="/" element={<Home/>}/>
                 <Route path={"/online-order"} element={<OnlineOrder/>}/>
             </Routes>
         </BrowserRouter>
